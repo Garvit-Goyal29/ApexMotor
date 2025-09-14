@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&family=Offside&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="booking.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <main>
+        <div id="back">
+            <a href="index.html">
+                <span class="material-symbols-outlined back">
+                    arrow_back
+                </span>
+            </a>
+        </div>
+        <div id="heading">
+            <h1>Our Line-up</h1>
+        </div>
+        <div id="card">
+            <div onclick="car1()" id="card1" class="cards">
+                <img src="car6.png" alt="">
+                <h3>Blaze V9</h3>
+                <h4>₹18,50,000</h4>
+
+            </div>
+            <div id="buyD1" class="buyD">
+                <div onclick="closeBuy()" id="backB">
+                    <span class="material-symbols-outlined close">
+                        close
+                    </span>
+                </div>
+                <h1>BOOK YOUR DREAM CAR NOW!</h1>
+            </div>
+            <div onclick="car2()" id="card2" class="cards">
+                <img src="car7.png" alt="">
+                <h3>Crimson X7</h3>
+                <h4>₹22,75,000</h4>
+            </div>
+            <div id="buyD2" class="buyD">
+                <div onclick="closeBuy()" id="backB">
+                    <span class="material-symbols-outlined close">
+                        close
+                    </span>
+                    <h1>BOOK YOUR DREAM CAR NOW!</h1>
+                </div>
+            </div>
+            <div onclick="car3()" id="card3" class="cards">
+                <img src="car8.png" alt="">
+                <h3>Nova GT</h3>
+                <h4>₹19,90,000</h4>
+            </div>
+            <div id="buyD3" class="buyD">
+                <div onclick="closeBuy()" id="backB">
+                    <span class="material-symbols-outlined close">
+                        close
+                    </span>
+                    <h1>BOOK YOUR DREAM CAR NOW!</h1>
+                </div>
+            </div>
+            <div onclick="car4()" id="card4" class="cards">
+                <img src="car9.png" alt="">
+                <h3>Shadow R8</h3>
+                <h4>₹24,60,000</h4>
+            </div>
+            <div id="buyD4" class="buyD">
+                <div onclick="closeBuy()" id="backB">
+                    <span class="material-symbols-outlined close">
+                        close
+                    </span>
+                </div>
+                <h1>BOOK YOUR DREAM CAR NOW!</h1>
+            </div>
+            <div onclick="car5()" id="card5" class="cards">
+                <img src="car10.png" alt="">
+                <h3>Vortex S5</h3>
+                <h4>₹21,10,000</h4>
+            </div>
+            <div id="buyD5" class="buyD">
+                <div onclick="closeBuy()" id="backB">
+                    <span class="material-symbols-outlined close">
+                        close
+                    </span>
+                </div>
+                <h1>BOOK YOUR DREAM CAR NOW!</h1>
+            </div>
+        </div>
+        <div id="test">
+
+        </div>
+    </main>
+    <script>
+        let buyD1 = document.getElementById("buyD1")
+        let buyD2 = document.getElementById("buyD2")
+        let buyD3 = document.getElementById("buyD3")
+        let buyD4 = document.getElementById("buyD4")
+        let buyD5 = document.getElementById("buyD5")
+        function car1() {
+            buyD1.style.display = "block"
+            buyD2.style.display = "none"
+            buyD3.style.display = "none"
+            buyD4.style.display = "none"
+            buyD5.style.display = "none"
+        }
+        function car2() {
+            buyD1.style.display = "none"
+            buyD2.style.display = "block"
+            buyD3.style.display = "none"
+            buyD4.style.display = "none"
+            buyD5.style.display = "none"
+        }
+        function car3() {
+            buyD1.style.display = "none"
+            buyD2.style.display = "none"
+            buyD3.style.display = "block"
+            buyD4.style.display = "none"
+            buyD5.style.display = "none"
+        }
+        function car4() {
+            buyD1.style.display = "none"
+            buyD2.style.display = "none"
+            buyD3.style.display = "none"
+            buyD4.style.display = "block"
+            buyD5.style.display = "none"
+        }
+        function car5() {
+            buyD1.style.display = "none"
+            buyD2.style.display = "none"
+            buyD3.style.display = "none"
+            buyD4.style.display = "none"
+            buyD5.style.display = "block"
+        }
+        function closeBuy() {
+            buyD1.style.display = "none"
+            buyD2.style.display = "none"
+            buyD3.style.display = "none"
+            buyD4.style.display = "none"
+            buyD5.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>

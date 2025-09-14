@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&family=Offside&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Sign-Up">
+        <span onclick="closeFormBtn()" class="material-symbols-outlined" id="close2">
+            close
+        </span>
+        <h2 id="s-up">Sign Up</h2>
+        <form action="">
+            <label for="name">NAME</label><br>
+            <input type="text" title="name" placeholder="Name"><br><br>
+            <label for="num">PHONE No.</label><br>
+            <input type="number" title="num" placeholder="eg.8546213575"><br><br>
+            <label for="email">EMAIL</label><br>
+            <input type="text" title="email" placeholder="Email"><br><br>
+            <input id="submit" type="submit" value="SUBMIT">
+        </form>
+    </div>
+    <header>
+        <div>
+            <a id="logo" href=""><img id="image" src="vecteezy_mini-car-logo-icon-png_28838321.png" alt=""></a>
+        </div>
+        <div id="navAt">
+            <a href="" class="navA">Home</a>
+            <a href="booking.html" class="navA">Booking</a>
+            <a href="" class="navA">Contact</a>
+        </div>
+        <button class="sign" onclick="signopen()" id="Sign">Sign Up</button>
+        <span onclick="openmenu()" class="material-symbols-outlined menu">
+            menu
+        </span>
+
+        <div id="phoneOpen">
+            <span onclick="closemenu()" class="material-symbols-outlined close">
+                close
+            </span>
+            <div id="PnavAt">
+                <a href="" class="PnavA">Home</a>
+                <a href="booking.html" class="PnavA">Booking</a>
+                <a href="" class="PnavA">Contact</a>
+            </div>
+            <button class="sign" onclick="signopen()" id="PSign">Sign Up</button>
+        </div>
+
+    </header>
+    <div id="show">
+        <div id="head">
+            <p id="solgn1">
+                Sports Turismo
+            </p>
+            <p id="name">Apex Motors</p>
+            <p id="solgn2">
+                Upgrade your ride today!
+            </p>
+        </div>
+        <div id="ad">
+            <div id="glowl" class="glow"></div>
+            <img src="bgm2.jpg" alt="">
+            <div id="glowr" class="glow"></div>
+        </div>
+    </div>
+    <main>
+        <div id="card">
+            <div class="cards">
+                <h3 class="cardsH">295 KM</h3>
+                <p class="cardsP">Driving Range</p>
+            </div>
+            <div class="cards">
+                <h3 class="cardsH">550 hp</h3>
+                <p class="cardsP">Overboost Power with Launch Control</p>
+            </div>
+            <div class="cards">
+                <h3 class="cardsH">2.6s</h3>
+                <p class="cardsP">0-60 km with Launch Control</p>
+            </div>
+        </div>
+        <div id="offer">
+
+        </div>
+        <div class="block" id="head-car">
+            <p>EXCLUSIVE NEWLY IN <strong>SPORTS TURISMO</strong></p>
+        </div>
+        <div class="block" id="contain">
+            <div id="slide-img">
+                <div id="carD1">
+                    <img class="car-img" src="car6.png" alt="">
+                    <!-- <audio id="revSound" src="car-sound (mp3cut.net).mp3"></audio> -->
+                    <div class="carDM">
+                        <h1 class="car-name">Blaze V9</h1>
+                        <h2 class="car-price">₹18,50,000</h2>
+                        <p class="details"><strong>Mileage:</strong> 14.2 km/l</p>
+                        <p class="details"><strong>Transmission:</strong> 6-speed automatic</p>
+                        <p class="details"><strong>Engine Capacity:</strong> 1998 cc</p>
+                    </div>
+                </div>
+                <div id="carD2">
+                    <img class="car-img" src="car7.png" alt="">
+                    <div class="carDM">
+                        <h1 class="car-name">Crimson X7</h1>
+                        <h2 class="car-price">₹22,75,000</h2>
+                        <p class="details"><strong>Mileage:</strong> 13.5 km/l</p>
+                        <p class="details"><strong>Transmission:</strong> 7-speed dual-clutch</p>
+                        <p class="details"><strong>Engine Capacity:</strong> 2200 cc</p>
+                    </div>
+                </div>
+                <div id="carD3">
+                    <img class="car-img" src="car8.png" alt="">
+                    <div class="carDM">
+                        <h1 class="car-name">Nova GT</h1>
+                        <h2 class="car-price">₹19,90,000</h2>
+                        <p class="details"><strong>Mileage:</strong> 15.1 km/l</p>
+                        <p class="details"><strong>Transmission:</strong> 6-speed manual</p>
+                        <p class="details"><strong>Engine Capacity:</strong> 2000 cc</p>
+                    </div>
+                </div>
+                <div id="carD4">
+                    <img class="car-img" src="car9.png" alt="">
+                    <div class="carDM">
+                        <h1 class="car-name">Shadow R8</h1>
+                        <h2 class="car-price">₹24,60,000</h2>
+                        <p class="details"><strong>Mileage:</strong> 12.3 km/l</p>
+                        <p class="details"><strong>Transmission:</strong> 8-speed automatic</p>
+                        <p class="details"><strong>Engine Capacity:</strong> 2400 cc</p>
+                    </div>
+                </div>
+                <div id="carD5">
+                    <img class="car-img" src="car10.png" alt="">
+                    <div class="carDM">
+                        <h1 class="car-name">Vortex S5</h1>
+                        <h2 class="car-price">₹21,10,000</h2>
+                        <p class="details"><strong>Mileage:</strong> 14.8 km/l</p>
+                        <p class="details"><strong>Transmission:</strong> 6-speed CVT</p>
+                        <p class="details"><strong>Engine Capacity:</strong> 2100 cc</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slide-circle">
+                <div onclick="show1()" id="cir1" class="circleS"></div>
+                <div onclick="show2()" id="cir2" class="circleS"></div>
+                <div onclick="show3()" id="cir3" class="circleS"></div>
+                <div onclick="show4()" id="cir4" class="circleS"></div>
+                <div onclick="show5()" id="cir5" class="circleS"></div>
+            </div>
+        </div>
+    </main>
+    <div class="block" id="dealer">
+        <div id="deal-mess">
+            <h1>Want to be our<br>dealer partner?</h1>
+            <img src="vecteezy_mini-car-logo-icon-png_28838321.png" alt="">
+        </div>
+        <div id="deal-form">
+            <form onsubmit="submitform(event)" action="">
+                <input id="deal-email" class="deal-input" type="text" title="name"
+                    placeholder="Type your email for inquery"><br><br>
+                <input id="deal-num" class="deal-input" type="text" title="num"
+                    placeholder="Type your phone number"><br><br>
+                <button id="submitD" type="submit" onclick="submitForm(event)">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- for heading font-family:"Arsenal SC";
+for detail font-family: "Comfortaa";
+for button font-family:"bebas neue"; -->
