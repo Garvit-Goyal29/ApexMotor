@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Portfolio — Skills</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #0b1220;
+            --muted: #201f1f;
+            --accent: #d33f00;
+            --accent-2: #ffbf00;
+            --glass: rgb(0, 0, 0);
+            --gap: 16px;
+            --radius: 10px;
+            color-scheme: dark;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: linear-gradient(180deg, #fafafa 0%, #fafafa 100%);
+            color: #000000;
+            padding: 36px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .skills-section {
+            max-width: 920px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 22px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .title {
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 700;
+            letter-spacing: -0.2px;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.01));
+            border-radius: var(--radius);
+            padding: 18px;
+            box-shadow: 0 6px 18px rgba(64, 64, 63, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+
+        .skill-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .skill-meta {
+            min-width: 170px;
+        }
+
+        .skill-name {
+            font-weight: 600;
+        }
+
+        .skill-note {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .progress {
+            flex: 1;
+            height: 12px;
+            background: var(--glass);
+            border-radius: 999px;
+            overflow: hidden;
+            margin-left: 12px;
+            position: relative;
+        }
+
+        .bar {
+            height: 100%;
+            width: 0%;
+            border-radius: 999px;
+            transition: width 1.5s cubic-bezier(.2, .9, .2, 1);
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            opacity: 1;
+        }
+
+        .gitP {
+            height: 100%;
+            width: 0%;
+            border-radius: 999px;
+            transition: width 1.5s cubic-bezier(.2, .9, .2, 1);
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            opacity: 1;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 14px;
+        }
+
+        .tag {
+            font-size: 13px;
+            background: rgba(0, 0, 0);
+            padding: 6px 10px;
+            border-radius: 999px;
+            color: #fafafa;
+            border: 1px solid #fafafa;
+        }
+        #back{
+            background-color: #000000;
+            color: #fafafa;
+            border-radius: 50%;
+            padding: 0.7vh;
+        }
+        /* Responsive */
+        @media (max-width:780px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-meta {
+                min-width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <span id="back"><i class="fa-solid fa-arrow-left"></i></span>
+    <section class="skills-section" aria-labelledby="skills-heading">
+        <div class="header">
+            <div>
+                <div class="title" id="skills-heading">Skills & Tools</div>
+                <div class="subtitle">Honest skill breakdown — current level and learning focus</div>
+            </div>
+        </div>
+
+        <div class="cards">
+
+            <!-- Programming & DSA -->
+            <div class="card" aria-label="Programming and Data Structures">
+                <h3>Programming & DSA</h3>
+
+                <div class="skill-row" data-level="65">
+                    <div class="skill-meta">
+                        <div class="skill-name">Java (DSA)</div>
+                        <div class="skill-note">DSA focus — Arrays, LinkedList, medium problems</div>
+                    </div>
+                    <div class="progress" aria-hidden="true">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-row" data-level="55">
+                    <div class="skill-meta">
+                        <div class="skill-name">Problem Solving</div>
+                        <div class="skill-note">Practicing medium problems, improving speed</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-row" data-level="60">
+                    <div class="skill-meta">
+                        <div class="skill-name">JavaScript (Web)</div>
+                        <div class="skill-note">Intermediate — language fundamentals</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Arrays</span>
+                    <span class="tag">String</span>
+                    <span class="tag">Linked List</span>
+                </div>
+            </div>
+
+            <!-- Web / Tools -->
+            <div class="card" aria-label="Web development and tools">
+                <h3>Web</h3>
+
+                <div class="skill-row" data-level="70">
+                    <div class="skill-meta">
+                        <div class="skill-name">Frontend — HTML / CSS</div>
+                        <div class="skill-note">Intermediate — responsive layouts</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-row" data-level="65">
+                    <div class="skill-meta">
+                        <div class="skill-name">Frontend — JavaScript (DOM)</div>
+                        <div class="skill-note">Vanilla JS, basic DOM & events</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-row" data-level="60">
+                    <div class="skill-meta">
+                        <div class="skill-name">Backend — Node.js & Express</div>
+                        <div class="skill-note">Building REST APIs, routing, middleware</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning & Misc -->
+            <div class="card" aria-label="Learning and misc">
+                <h3>Learning & Focus</h3>
+
+                <div class="skill-row" data-level="40">
+                    <div class="skill-meta">
+                        <div class="skill-name">System Design / Advanced Topics</div>
+                        <div class="skill-note">Intro level — will deepen over time</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-row" data-level="50">
+                    <div class="skill-meta">
+                        <div class="skill-name">Testing & Debugging</div>
+                        <div class="skill-note">Unit tests, debugging workflow</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">Learning: React</span>
+                    <span class="tag">Learning: TypeScript</span>
+                    <span class="tag">Learning: MongoDB</span>
+                </div>
+            </div>
+
+            <!-- Soft / Career -->
+            <div class="card" aria-label="Soft skills">
+                <h3>Tools & Soft Skills</h3>
+
+                <div class="skill-row" data-level="75">
+                    <div class="skill-meta">
+                        <div class="skill-name">Version Control</div>
+                        <div class="skill-note">Git, GitHub</div>
+                    </div>
+                    <div class="progress">
+                        <div class="bar gitp"></div>
+                    </div>
+                </div>
+
+
+                <div class="tags">
+                    <span class="tag">Collaboration</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Quick Learner</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Git / GitHub</span>
+                    <span class="tag">NPM</span>
+                    <span class="tag">Postman</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

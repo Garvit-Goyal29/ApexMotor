@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Fjalla+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Martian+Mono:wght@100..800&family=Offside&family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=language" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="skillsectionM" style="display: none;">
+        <span id="back"><i class="fa-solid fa-xmark"></i></span>
+        <section class="skills-section" aria-labelledby="skills-heading">
+            <div class="header">
+                <div>
+                    <div class="title" id="skills-heading">Skills & Tools</div>
+                    <div class="subtitle">Honest skill breakdown — current level and learning focus</div>
+                </div>
+            </div>
+
+            <div class="cards">
+
+                <!-- Programming & DSA -->
+                <div class="Scard" aria-label="Programming and Data Structures">
+                    <h3>Programming & DSA</h3>
+
+                    <div class="skill-row" data-level="65">
+                        <div class="skill-meta">
+                            <div class="skill-name">Java (DSA)</div>
+                            <div class="skill-note">DSA focus — Arrays, LinkedList, medium problems</div>
+                        </div>
+                        <div class="progress" aria-hidden="true">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row" data-level="55">
+                        <div class="skill-meta">
+                            <div class="skill-name">Problem Solving</div>
+                            <div class="skill-note">Practicing medium problems, improving speed</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row" data-level="60">
+                        <div class="skill-meta">
+                            <div class="skill-name">JavaScript (Web)</div>
+                            <div class="skill-note">Intermediate — language fundamentals</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Arrays</span>
+                        <span class="tag">String</span>
+                        <span class="tag">Linked List</span>
+                    </div>
+                </div>
+
+                <!-- Web / Tools -->
+                <div class="Scard" aria-label="Web development and tools">
+                    <h3>Web</h3>
+
+                    <div class="skill-row" data-level="70">
+                        <div class="skill-meta">
+                            <div class="skill-name">Frontend — HTML / CSS</div>
+                            <div class="skill-note">Intermediate — responsive layouts</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row" data-level="65">
+                        <div class="skill-meta">
+                            <div class="skill-name">Frontend — JavaScript (DOM)</div>
+                            <div class="skill-note">Vanilla JS, basic DOM & events</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row" data-level="60">
+                        <div class="skill-meta">
+                            <div class="skill-name">Backend — Node.js & Express</div>
+                            <div class="skill-note">Building REST APIs, routing, middleware</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning & Misc -->
+                <div class="Scard" aria-label="Learning and misc">
+                    <h3>Learning & Focus</h3>
+
+                    <div class="skill-row" data-level="40">
+                        <div class="skill-meta">
+                            <div class="skill-name">System Design / Advanced Topics</div>
+                            <div class="skill-note">Intro level — will deepen over time</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-row" data-level="50">
+                        <div class="skill-meta">
+                            <div class="skill-name">Testing & Debugging</div>
+                            <div class="skill-note">Unit tests, debugging workflow</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Learning: React</span>
+                        <span class="tag">Learning: TypeScript</span>
+                        <span class="tag">Learning: MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Soft / Career -->
+                <div class="Scard" aria-label="Soft skills">
+                    <h3>Tools & Soft Skills</h3>
+
+                    <div class="skill-row" data-level="75">
+                        <div class="skill-meta">
+                            <div class="skill-name">Version Control</div>
+                            <div class="skill-note">Git, GitHub</div>
+                        </div>
+                        <div class="progress">
+                            <div class="bar gitp"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="tags">
+                        <span class="tag">Collaboration</span>
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Quick Learner</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">NPM</span>
+                        <span class="tag">Postman</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    <header id="header">
+        <h3 id="title">Portfolio</h3>
+        <div id="elements">
+            <a class="page" id="projects" href="#project_section">PROJECTS</a>
+            <a class="page" id="contact" href="#footer">CONTACT</a>
+            <a class="page" id="skills" href="">SKILLS</a>
+            <a href="G (4).pdf" download="" id="resume">RESUME ></a>
+            <button id="toggle"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+    <main>
+        <img id="B-img" src="vecteezy_programmer-people-concept-use-laptop-and-programming-code_.jpg" alt="">
+        <h4>Hi I'm Garvit</h4>
+        <h2>Aspiring Software Developer <br> Learning MERN Stack Web Development <br> Practicing DSA in Java</h2>
+        <h5>Passionate about building real-world projects with HTML, CSS, JavaScript, Node.js, and Express <br> while improving problem-solving skills in Data Structures & Algorithms. <br>Familiar with tools like Git, GitHub, and VS Code.</h5>
+        <button id="Connectbtn">Connect With Me</button>
+    </main>
+    <div id="project_section">
+        <h2 id="project_heading">My Projects</h2>
+        <div id="project">
+            <div id="card1" class="card"><a href="CarWebFullFunctional/index.html" class="card-link"><span
+                        class="material-symbols-outlined cardA">
+                        language
+                    </span></a></div>
+            <div id="card2" class="card"><a href="https://example.com" class="card-link"><span
+                        class="material-symbols-outlined cardA">
+                        language
+                    </span></a></div>
+            <div id="card3" class="card"><a href="https://example.com" class="card-link"><span
+                        class="material-symbols-outlined cardA">
+                        language
+                    </span></a></div>
+            <div id="card4" class="card"><a href="https://example.com" class="card-link"><span
+                        class="material-symbols-outlined cardA">
+                        language
+                    </span></a></div>
+            <div id="card5" class="card">
+                <a href="https://example.com" class="card-link"><span class="material-symbols-outlined cardA">
+                        language
+                    </span></a>
+            </div>
+            <div id="card6" class="card"></div>
+        </div>
+        <button id="more_project">More Detail</button>
+    </div>
+    <footer id="footer">
+        <a id="emailTAG" href="">garvitpersonal29557@gmail.com</a>
+        <div class="social-links">
+            <a class="sl-a" href="https://www.linkedin.com/in/garvit-goyal-00073733a" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="sl-a" href="https://github.com/Garvit-Goyal29" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a class="sl-a" href="https://instagram.com/yourusername" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+
+        <div class="footer-nav">
+            <a href="#header">Home</a> |
+            <a href="#project_section">Projects</a> |
+            <a href="#footer">Contact</a> |
+            <a id="skillInFooter" href="#skill">Skill</a>
+        </div>
+        <br>
+        <p class="footer-para">Crafted with ❤️ by Garvit</p>
+        <p class="footer-para">© <span id="year"></span> Garvit All rights reserved.</p>
+        <p class="credits footer-para">CREDIT :- Icons by <a href="https://fontawesome.com/"
+                target="_blank">FontAwesome</a> , Fonts by <a href="https://Googlefonts.com/"
+                target="_blank">Googlefonts</a></p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+<script src="script.js"></script>
+
+</html>

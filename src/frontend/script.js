@@ -152,24 +152,19 @@ function show5() {
     revSound.currentTime = 0;
     revSound.play();
 }
-function submitform(event) {
-    event.preventDefault();
-    var email = document.getElementById("deal-email").value
-    var num = document.getElementById("deal-num").value
-    if (!email || !num) {
-        alert("Please fill detail, Empty form doesn't submit")
-        return;
+async function submitform(e) {
+    e.preventDefault();
+    const formData = {
+        email: document.getElementById("deal-email").value,
+        phone: document.getElementById("deal-num").value
     }
-    // if (num.length !== 10) {
-    //     alert("Invalid number")
-    //     return;
-    // }
-    let emails = JSON.parse(localStorage.getItem("emails")) || [];
-    emails.push(email);
-    localStorage.setItem("emails",JSON.stringify(emails))
+    
+    const req = await fetch("http://localhost:5000/dealerForm", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+    });
 
-    let nums = JSON.parse(localStorage.getItem("nums")) || [];
-    nums.push(num);
-    localStorage.setItem("nums",JSON.stringify(nums))
-    alert("DETAILS SUBMIT SUCCESSFULY!, We will contact you soon.")
+    const data = await req.json()
+    console.log(data)
 }
