@@ -18,7 +18,4 @@ async function handleDealerDetail(req, res) {
         });
     }
 }
-
-module.exports = {
-    handleDealerDetail,
-};
+module.exports = { handleDealerDetail };

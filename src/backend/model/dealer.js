@@ -14,3 +14,4 @@ const dealer = mongoose.model("dealer", userSchema);
 module.exports = {
     dealer,
 };
+
