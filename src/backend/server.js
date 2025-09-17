@@ -11,8 +11,7 @@ app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
 }));
-
-
+app.options("*", cors());
 
 // Connect to MongoDB
 const { connectDB } = require("./connection");
