@@ -158,7 +158,12 @@ async function submitform(e) {
         email: document.getElementById("deal-email").value,
         phone: document.getElementById("deal-num").value
     }
-    
+    if (!email || !phone) {
+        alert("Enter both contact no. and email!");
+    }
+    if (phone.length != 10 || !/^\d{10}$/.test(phone))  {
+        alert("Enter valid contact number");
+    }
     const req = await fetch("https://apexmotor-backend.onrender.com/dealerForm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
