@@ -159,7 +159,7 @@ async function submitform(e) {
         phone: document.getElementById("deal-num").value
     }
     
-    const req = await fetch("http://localhost:5000/dealerForm", {
+    const req = await fetch("https://apexmotor-backend.onrender.com/dealerForm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
