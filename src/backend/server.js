@@ -7,10 +7,11 @@ const port = process.env.PORT ||  5000;
 //Middleware
 app.use(express.json());
 app.use(cors({
-    origin: "http://127.0.0.1:5500",   // ✅ allow your frontend (Live Server)
-    methods: ["GET", "POST", "PUT", "DELETE"], // allowed methods
-    allowedHeaders: ["Content-Type"], // allow JSON headers
+    origin: ["http://127.0.0.1:5500", "https://apex-motor.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type"],
 }));
+
 
 
 // Connect to MongoDB
