@@ -154,22 +154,35 @@ function show5() {
 }
 async function submitform(e) {
     e.preventDefault();
-    const formData = {
-        email: document.getElementById("deal-email").value,
-        phone: document.getElementById("deal-num").value
-    }
-    if (!email || !phone) {
-        alert("Enter both contact no. and email!");
-    }
-    if (phone.length != 10 || !/^\d{10}$/.test(phone))  {
-        alert("Enter valid contact number");
-    }
-    const req = await fetch("https://apexmotor-backend.onrender.com/dealerForm", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData)
-    });
 
-    const data = await req.json()
-    alert("DATA SENDED!");
+    // Get the input values and trim spaces
+    const email = document.getElementById("deal-email").value.trim();
+    const phone = document.getElementById("deal-num").value.trim();
+
+    // Validation
+    if (!email || !phone) {
+        return alert("Enter both contact number and email!");
+    }
+
+    if (phone.length != 10 || !/^\d{10}$/.test(phone)) {
+        return alert("Enter a valid 10-digit contact number");
+    }
+
+    try {
+        // Send data to backend
+        const req = await fetch("https://apexmotor-backend.onrender.com/dealerForm", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, phone }) // Use the variables defined above
+        });
+
+        if (!req.ok) throw new Error(`HTTP error! status: ${req.status}`);
+
+        const data = await req.json();
+        alert("Form submitted successfully!");
+        console.log(data);
+    } catch (err) {
+        console.error(err);
+        alert("Failed to submit form. Please try again!");
+    }
 }
