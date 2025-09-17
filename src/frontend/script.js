@@ -166,5 +166,5 @@ async function submitform(e) {
     });
 
     const data = await req.json()
-    console.log(data)
+    alert("DATA SENDED!");
 }
