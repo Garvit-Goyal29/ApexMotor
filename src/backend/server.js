@@ -8,7 +8,7 @@ const port = process.env.PORT ||  5000;
 app.use(express.json());
 app.use(cors({
     origin: ["http://127.0.0.1:5500", "https://apex-motor.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
 }));
 app.options("*", cors());
