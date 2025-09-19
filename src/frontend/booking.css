@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow: hidden;
+}
 #back{
+
     position: absolute;
     top:2.5vh;
     left:1.5vw;
@@ -81,8 +85,9 @@ main {
     margin-top: 10vh;
     height: 80vh;
     width: 90vw;
-    border: 2px red solid;
+    border-radius: 1.2vh;
     background-color: #000;
+    color: #fff;
     background-image: url(./assets/car6.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -97,8 +102,9 @@ main {
     margin-top: 10vh;
     height: 80vh;
     width: 90vw;
-    border: 2px red solid;
+    border-radius: 1.2vh;
     background-color: #000;
+    color: #fff;
     font-family: "offside";
     background-image: url(./assets/car7.png);
     background-repeat: no-repeat;
@@ -113,8 +119,9 @@ main {
     margin-top: 10vh;
     height: 80vh;
     width: 90vw;
-    border: 2px red solid;
+    border-radius: 1.2vh;
     background-color: #000;
+    color: #fff;
     font-family: "offside";
     background-image: url(./assets/car8.png);
     background-repeat: no-repeat;
@@ -129,8 +136,9 @@ main {
     margin-top: 10vh;
     height: 80vh;
     width: 90vw;
-    border: 2px red solid;
+    border-radius: 1.2vh;
     background-color: #000;
+    color: #fff;
     font-family: "offside";
     background-image: url(./assets/car9.png);
     background-repeat: no-repeat;
@@ -145,8 +153,9 @@ main {
     margin-top: 10vh;
     height: 80vh;
     width: 90vw;
-    border: 2px red solid;
+    border-radius: 1.2vh;
     background-color: #000;
+    color: #fff;
     font-family: "offside";
     background-image: url(./assets/car10.png);
     background-repeat: no-repeat;

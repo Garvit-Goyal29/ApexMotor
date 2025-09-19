@@ -19,7 +19,7 @@
 <body>
     <main>
         <div id="back">
-            <a href="index.html">
+            <a onclick="pageload(e)" href="index.html">
                 <span class="material-symbols-outlined back">
                     arrow_back
                 </span>
@@ -106,6 +106,9 @@
         let buyD3 = document.getElementById("buyD3")
         let buyD4 = document.getElementById("buyD4")
         let buyD5 = document.getElementById("buyD5")
+        function pageload(e){
+            e.preventDefault();
+        }
         function car1() {
             buyD1.style.display = "block"
             buyD2.style.display = "none"
