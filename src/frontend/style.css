@@ -509,7 +509,7 @@ label {
 }
 
 #Sign-Up {
-    background-image: url(C:\Users\Garvi\OneDrive\Desktop\Main_web\CarWebFullFunctional\src\frontend\assets\sign.jpg);
+    background-image: url(./assets/sign.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

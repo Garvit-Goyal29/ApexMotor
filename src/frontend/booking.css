@@ -29,7 +29,7 @@ main {
     padding-top: 10vh;
     padding-bottom: 10vh;
     width: 100%;
-    background-image: url(book1.jpg);
+    background-image: url(./assets/book1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,10 +81,12 @@ main {
     margin-top: 10vh;
     height: 80vh;
     width: 90vw;
-    background-image: url(bgf2.jpg);
+    border: 2px red solid;
+    background-color: #000;
+    background-image: url(./assets/car6.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     text-align: center;
     font-family: "offside";
 }
@@ -96,7 +98,13 @@ main {
     height: 80vh;
     width: 90vw;
     border: 2px red solid;
+    background-color: #000;
     font-family: "offside";
+    background-image: url(./assets/car7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
 }
 #buyD3{
     display:none;
@@ -106,7 +114,13 @@ main {
     height: 80vh;
     width: 90vw;
     border: 2px red solid;
+    background-color: #000;
     font-family: "offside";
+    background-image: url(./assets/car8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
 }
 #buyD4{
     display:none;
@@ -116,7 +130,13 @@ main {
     height: 80vh;
     width: 90vw;
     border: 2px red solid;
+    background-color: #000;
     font-family: "offside";
+    background-image: url(./assets/car9.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
 }
 #buyD5{
     display:none;
@@ -126,7 +146,13 @@ main {
     height: 80vh;
     width: 90vw;
     border: 2px red solid;
+    background-color: #000;
     font-family: "offside";
+    background-image: url(./assets/car10.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
 }
 
 .cards:hover {
