@@ -23,12 +23,16 @@ const sign = document.querySelector("#Sign-Up");
 const mainP = document.querySelector("#mainpage");
 function signopen() {
     sign.style.display = "flex";
+    document.getElementById("overlay").style.display = "block";
+    document.body.style.overflow = "hidden";
     closeBtns.forEach(btn => {
         btn.style.display = "none";
     });
 }
 function closeFormBtn() {
     sign.style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+    document.body.style.overflow = "auto";
     closeBtns.forEach(btn => {
         btn.style.display = "inline-block";
     });
