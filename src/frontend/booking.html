@@ -106,7 +106,7 @@
         let buyD3 = document.getElementById("buyD3")
         let buyD4 = document.getElementById("buyD4")
         let buyD5 = document.getElementById("buyD5")
-        function pageload(e){
+        function pageload(e) {
             e.preventDefault();
         }
         function car1() {
@@ -151,6 +151,18 @@
             buyD4.style.display = "none"
             buyD5.style.display = "none"
         }
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Backspace') {
+                e.preventDefault();
+                const buyDivs = document.querySelectorAll('[id^="buyD"]');
+                buyDivs.forEach(div => {
+                    if (div.style.display === 'block') {
+                        div.style.display = 'none';
+                    }
+                });
+            }
+        });
+
     </script>
 </body>
 
