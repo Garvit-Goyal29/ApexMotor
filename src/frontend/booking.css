@@ -83,15 +83,15 @@ main {
     position: absolute;
     top: 0;
     margin-top: 10vh;
-    height: 80vh;
-    width: 90vw;
+    height: 70vh;
+    width: 80vw;
     border-radius: 1.2vh;
     background-color: #000;
     color: #fff;
     background-image: url(./assets/car6.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 150vh;
     text-align: center;
     font-family: "offside";
 }
@@ -100,8 +100,8 @@ main {
     position: absolute;
     top: 0;
     margin-top: 10vh;
-    height: 80vh;
-    width: 90vw;
+    height: 70vh;
+    width: 80vw;
     border-radius: 1.2vh;
     background-color: #000;
     color: #fff;
@@ -109,7 +109,7 @@ main {
     background-image: url(./assets/car7.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 150vh;
     text-align: center;
 }
 #buyD3{
@@ -117,8 +117,8 @@ main {
     position: absolute;
     top: 0;
     margin-top: 10vh;
-    height: 80vh;
-    width: 90vw;
+    height: 70vh;
+    width: 80vw;
     border-radius: 1.2vh;
     background-color: #000;
     color: #fff;
@@ -126,7 +126,7 @@ main {
     background-image: url(./assets/car8.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 150vh;
     text-align: center;
 }
 #buyD4{
@@ -134,8 +134,8 @@ main {
     position: absolute;
     top: 0;
     margin-top: 10vh;
-    height: 80vh;
-    width: 90vw;
+    height: 70vh;
+    width: 80vw;
     border-radius: 1.2vh;
     background-color: #000;
     color: #fff;
@@ -143,7 +143,7 @@ main {
     background-image: url(./assets/car9.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 150vh;
     text-align: center;
 }
 #buyD5{
@@ -151,8 +151,8 @@ main {
     position: absolute;
     top: 0;
     margin-top: 10vh;
-    height: 80vh;
-    width: 90vw;
+    height: 70vh;
+    width: 80vw;
     border-radius: 1.2vh;
     background-color: #000;
     color: #fff;
@@ -160,10 +160,12 @@ main {
     background-image: url(./assets/car10.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 150vh;
     text-align: center;
 }
-
+.buyD h2{
+    margin-top: 2vh;
+}
 .cards:hover {
     width: 17vw;
     height: 40vh;
